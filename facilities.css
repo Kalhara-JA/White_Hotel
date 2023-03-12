@@ -100,6 +100,7 @@ body {
 }
 
 .line {
+    z-index: 200;
     width: 50vw;
     height: 0.2vw;
     margin-top: 5vw;
@@ -140,6 +141,8 @@ body {
 
 .fac1-img-outer img {
     width: 30vw;
+    transform: scale(1);
+    transition: transform 0.3s ease-in;
 }
 
 .fac1-content-outer {
@@ -191,6 +194,8 @@ body {
 
 .fac2-img-outer img {
     width: 35vw;
+    transform: scale(1);
+    transition: transform 0.3s ease-in;
 }
 
 .fac3-outer {
@@ -213,10 +218,13 @@ body {
     width: 35vw;
     display: flex;
     align-items: center;
+
 }
 
 .fac5-img-outer img {
     width: 35vw;
+    transform: scale(1);
+    transition: transform 0.3s ease-in;
 }
 
 .fac5-content-outer {
@@ -275,6 +283,7 @@ body {
     font-size: 2vw;
     padding-right: 0.5vw;
     padding-top: 0.5vw;
+    color: white;
 }
 
 .footer-logo {
@@ -286,5 +295,14 @@ body {
 }
 .selected_element{
     border-bottom: 0.2vw solid white;
+}
+.fac1-outer:hover .fac1-img-outer img{
+    transform: scale(1.05);
+}
+.fac2-outer:hover .fac2-img-outer img{
+    transform: scale(1.05);
+}
+.fac5-outer:hover .fac5-img-outer img{
+    transform: scale(1.05);
 }
 
