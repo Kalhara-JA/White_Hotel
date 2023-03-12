@@ -284,3 +284,7 @@ body {
 .footer-img-logo {
     width: 10vw;
 }
+.selected_element{
+    border-bottom: 0.2vw solid white;
+}
+

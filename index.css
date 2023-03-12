@@ -96,6 +96,9 @@
     transition: opacity 0.35s, transform 0.35s;
     transform: scale(0, 1);
 }
+.selected_element{
+    border-bottom: 0.2vw solid white;
+}
 
 .items:hover:after {
     opacity: 1;

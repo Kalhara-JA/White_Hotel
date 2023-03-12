@@ -186,3 +186,6 @@ input{
 .linkss{
     color: white;
 }
+.selected_element{
+    border-bottom: 0.2vw solid white;
+}
