@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Genos&display=swap');
+*{
+    margin: 0;
+}
+
+/* ========== */
+
+.nav-outer {
+    top: 0;
+    position: absolute;
+    position: fixed;
+    height: 6vw;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    background-color: black;
+    border-radius: 0 0 2vw 2vw;
+}
+
+.nav-logo-outer {
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-logo-outer img {
+    height: auto;
+    width: 8vw;
+    padding: 0.5vw;
+}
+
+.nav-content-outer {
+    width: 80vw;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.nav-content-inner {
+    display: flex;
+    height: 100%;
+    width: 80vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-element {
+    width: 12vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center !important;
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Genos', sans-serif;
+}
+
+.items {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.items:after {
+    content: '';
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    border: 0.1vw solid white;
+    opacity: 0;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: scale(0, 1);
+}
+
+.items:hover:after {
+    opacity: 1;
+    transform: scale(1);
+}
+/* ========== */
+.offers-main-outer{
+    overflow-x: hidden;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vw;
+    align-items: center;
+    justify-content: center; 
+}
+.offers-inner{
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.offer-row1-outer{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.offer{
+    width: 35vw;
+    height: 30vw;
+    overflow: hidden;
+}
+.offer1-inner{
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.offer1-img{
+    width:40vw;
+}
+.offer1-img img{
+    width:40vw;
+    scale:1.1;
+    transition: all 0.5s ease-out;
+}
+.offer1-content-outer{
+    color: white;
+    width: 40vw;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-family: 'Comfortaa', cursive;
+    position: absolute;
+    font-weight: bold;
+}
+.offer1-tittle{
+    position: absolute;
+    bottom:1vw;
+    font-size:2vw;
+    font-weight:bold;
+    inset: auto auto 1vw center;
+    transition: inset .5s cubic-bezier(.1,.72,.4,.97);
+}
+.offer1-description{
+    position: absolute;
+    text-align: center;
+    bottom: -10vw;
+    width:18vw;
+    font-size:1vw;
+    inset: auto auto 1vw center;
+    transition: all .5s cubic-bezier(.1,.72,.4,.97);
+}
+.offer1-price{
+    text-align: center;
+    background-color: white;
+    font-size:1.5vw;
+    position: absolute;
+    bottom: -20vw;
+    color:black;
+    width:3vw;
+    padding: 0.5vw;
+    border-radius:3vw;
+    font-weight:bold ;
+    inset: auto auto 1vw center;
+    transition: all .5s cubic-bezier(.1,.72,.4,.97);
+}
+
+.offer:hover .offer1-content-outer{
+    position: absolute;
+    height: 30vw;
+    justify-content: center;
+    transition: all 0.5s ease-out;
+}
+.offer:hover .offer1-img img{
+    position: relative;
+    scale:1;
+    filter: blur(5px);
+}
+.offer:hover .offer1-tittle{
+    bottom: 15vw;
+}
+.offer:hover .offer1-description{
+    bottom: 10vw;
+    padding: 1vw;
+}
+.offer:hover .offer1-price{
+    bottom: 5vw;
+}
+/* ======== */
+
+.footer-outer {
+    width: 100vw;
+    height: 11vw;
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.footer-inner {
+    position: relative;
+    left: 5vw;
+    width: 20vw;
+}
+
+.contactus-outer {
+    font-size: 3vw;
+    font-weight: bold;
+    font-family: 'Genos', sans-serif;
+}
+
+.address-outer {
+    font-size: 1vw;
+    font-weight: bold;
+    font-family: 'Genos', sans-serif;
+}
+
+.icons {
+    font-size: 2vw;
+    padding-right: 0.5vw;
+    padding-top: 0.5vw;
+}
+
+.footer-logo {
+    width: 10vw;
+}
+.footer-img-logo {
+    width: 10vw;
+}

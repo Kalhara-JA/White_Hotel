@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Genos&display=swap');
+
+body {
+    margin: 0;
+}
+
+.nav-outer {
+    top: 0;
+    position: absolute;
+    position: fixed;
+    height: 6vw;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    background-color: black;
+    border-radius: 0 0 2vw 2vw;
+}
+
+.nav-logo-outer {
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-logo-outer img {
+    height: auto;
+    width: 8vw;
+    padding: 0.5vw;
+}
+
+.nav-content-outer {
+    width: 80vw;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.nav-content-inner {
+    display: flex;
+    height: 100%;
+    width: 80vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-element {
+    width: 12vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center !important;
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Genos', sans-serif;
+}
+
+.items {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.items:after {
+    content: '';
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    border: 0.1vw solid white;
+    opacity: 0;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: scale(0, 1);
+}
+
+.items:hover:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.f-main-outer {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.facilities-outer {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    width: 50vw;
+    height: 0.2vw;
+    margin-top: 5vw;
+    background-color: white;
+    border-radius: 100%;
+    background: linear-gradient(90deg, #ffffff 0%, #717171 30%, #000000 67%, #ffffff 100%);
+    background-size: 1000%;
+    animation: background 4s linear alternate infinite;
+}
+
+@keyframes background {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100% 0;
+    }
+}
+
+.facilities-inner {
+    width: 80vw;
+    height: 230vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+    font-family: 'Comfortaa', cursive;
+
+}
+
+.fac1-outer {
+    width: 60vw;
+    height: 30vw;
+    display: flex;
+}
+
+.fac1-img-outer img {
+    width: 30vw;
+}
+
+.fac1-content-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3vw;
+}
+
+.fac1-content-title {
+    width: 100%;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.fac1-content {
+    width: 25vw;
+    text-align: justify;
+}
+
+.fac2-outer {
+    display: flex;
+    width: 60vw;
+    height: 30vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.fac2-content-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2vw;
+    width: 18vw;
+}
+
+.fac2-content-title {
+    width: 100%;
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: right;
+}
+
+.fac2-content {
+    text-align: justify;
+}
+
+.fac2-img-outer img {
+    width: 35vw;
+}
+
+.fac3-outer {
+    width: 60vw;
+    height: 30vw;
+}
+
+.fac4-outer {
+    width: 60vw;
+    height: 30vw;
+}
+
+.fac5-outer {
+    width: 60vw;
+    height: 30vw;
+    display: flex;
+}
+
+.fac5-img-outer {
+    width: 35vw;
+    display: flex;
+    align-items: center;
+}
+
+.fac5-img-outer img {
+    width: 35vw;
+}
+
+.fac5-content-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3vw;
+}
+
+.fac5-content-title {
+    width: 100%;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.fac5-content {
+    width: 20vw;
+    text-align: justify;
+}
+
+.fac6-outer {
+    width: 60vw;
+    height: 30vw;
+}
+
+.footer-outer {
+    width: 100vw;
+    height: 11vw;
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-inner {
+    position: relative;
+    left: 5vw;
+    width: 20vw;
+}
+
+.contactus-outer {
+    font-size: 3vw;
+    font-weight: bold;
+    font-family: 'Genos', sans-serif;
+}
+
+.address-outer {
+    font-size: 1vw;
+    font-weight: bold;
+    font-family: 'Genos', sans-serif;
+}
+
+.icons {
+    font-size: 2vw;
+    padding-right: 0.5vw;
+    padding-top: 0.5vw;
+}
+
+.footer-logo {
+    width: 10vw;
+}
+
+.footer-img-logo {
+    width: 10vw;
+}

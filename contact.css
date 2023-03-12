@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Genos&display=swap');
+*{
+    margin: 0;
+}
+.main-outer{
+    width: 100%;
+    background-color:black;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    font-family: 'Comfortaa', cursive;
+}
+.main-inner{
+    width: 70vw;
+    height: 68vw;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    text-align: center;
+    width: 50vw;
+    font-size: 2vw;
+    color: white;
+    font-weight: bold;
+    text-decoration: overline underline ;
+}
+.description{
+    font-size:1.5vw;
+    color: white;
+    padding: 1vw;
+}
+.form-outer{
+    width: 50vw;
+    height: 25vw;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    border-radius: 0.5vw;
+    width: 30vw;
+    height: 2vw;
+    font-size: 1vw;
+}
+.form{
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.submit{
+    border-radius: 2vw;
+    width:10vw;
+    height:2vw;
+    color: black;
+    font-size: 1vw;
+    font-weight: bold;
+    font-family: 'Comfortaa', cursive;
+    transition: color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+.submit:hover{
+    background-color:black;
+    color: white;
+    border: white 1px solid;
+}
+.logo img{
+    width:20vw;
+}
+.footer-inner {
+    border-top: 0.5vw solid white;
+    border-radius: 100%;
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width: 30vw;
+    color: white ;
+    text-align: center;
+}
+
+.contactus-outer {
+    width: 30vw;
+    font-size: 3vw;
+    font-weight: bold;
+    font-family: 'Genos', sans-serif;
+}
+
+.address-outer {
+    width: 30vw;
+    font-size: 1vw;
+    font-weight: bold;
+    font-family: 'Genos', sans-serif;
+}
+
+.icons {
+    font-size: 2vw;
+    padding-right: 0.5vw;
+    padding-top: 0.5vw;
+}
+
+/* ========= */
+.nav-outer {
+    top: 0;
+    position: absolute;
+    position: fixed;
+    height: 6vw;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    background-color: black;
+    border-radius: 0 0 2vw 2vw;
+}
+
+.nav-logo-outer {
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-logo-outer img {
+    height: auto;
+    width: 8vw;
+    padding: 0.5vw;
+}
+
+.nav-content-outer {
+    width: 80vw;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.nav-content-inner {
+    display: flex;
+    height: 100%;
+    width: 80vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-element {
+    width: 12vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center !important;
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Genos', sans-serif;
+}
+
+.items {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.items:after {
+    content: '';
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    border: 0.1vw solid white;
+    opacity: 0;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: scale(0, 1);
+}
+
+.items:hover:after {
+    opacity: 1;
+    transform: scale(1);
+}
+.linkss{
+    color: white;
+}
