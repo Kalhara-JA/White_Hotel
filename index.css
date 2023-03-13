@@ -7,13 +7,14 @@
 
 .background-img {
     width: 100vw;
-    height: auto;
+    height: 100%;
     position: relative;
     z-index: 50;
 }
 
 .background-img img {
     width: 100vw;
+    z-index: 50;
 }
 
 .main-outer {
@@ -27,7 +28,6 @@
 
 .nav-outer {
     top: 0;
-    position: absolute;
     position: fixed;
     height: 6vw;
     width: 100vw;
@@ -44,6 +44,10 @@
     height: 100%;
     display: flex;
     justify-content: center;
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    z-index: 5000;
+    animation: shine 2s infinite;
 }
 
 .nav-logo-outer img {
@@ -98,6 +102,10 @@
 }
 .selected_element{
     border-bottom: 0.2vw solid white;
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    z-index: 5000;
+    animation: shine 2s infinite;
 }
 
 .items:hover:after {
@@ -125,6 +133,36 @@
         background-position: 100% 0;
     }
 }
+
+.arrow{
+    width: 5vw;
+    font-size: 5vw;
+    color:white;
+    z-index: 60;
+    position: absolute;
+    bottom: 10vw;
+    left: 10vw;
+    transform: scale(1);
+    animation: pulse-white 2s infinite;
+    text-shadow: 0 0 0 0 rgb(255, 255, 255);
+
+}
+  @keyframes pulse-white {
+    0% {
+      transform: scale(0.95);
+      text-shadow: 0 0 0 0 rgb(255, 255, 255);
+    }
+    
+    70% {
+      transform: scale(1.2);
+      text-shadow: 0 0 0 10px rgb(255, 255, 255);
+    }
+    
+    100% {
+      transform: scale(0.95);
+      text-shadow: 0 0 0 0 rgb(255, 255, 255);
+    }
+  }
 
 .about-content-outer {
     width: 100vw;
@@ -278,7 +316,19 @@
     width: 10vw;
 }
 
-/* =============== */
-
-
-/* =============== */
+.shine:hover{
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    z-index: 5000;
+    animation: shine 2s infinite;
+  }
+  
+  @-webkit-keyframes shine {
+    from {
+      -webkit-mask-position: 150%;
+    }
+    
+    to {
+      -webkit-mask-position: -50%;
+    }
+  }
